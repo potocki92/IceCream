@@ -1,5 +1,25 @@
 .menu-background {
   position: relative;
-  min-height: 502px;
-  background: radial-gradient();
+  height: 502px;
+  width: 100vw;
+  background-color: getColor(pinky);
+  overflow: hidden;
+
+&__ice{
+  position: absolute;
+  bottom: 0px;
+  left: 36vw;
+  z-index: -1;
 }
+&__svg {
+  position: absolute;
+  top: 83px;
+  left: 14vw;
+
+}
+
+&__elipse{
+  position: absolute;
+  fill: #FFA5BA;
+  z-index: -2;
+}}
