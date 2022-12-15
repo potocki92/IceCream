@@ -1,0 +1,112 @@
+:root {
+  --text-color-main: #d41443;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+}
+.section {
+  padding-top: 125px;
+}
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0px auto;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-widht: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.about {
+  background-color: #fff5f6;
+  background-image: url(../images/1200/sectionbg1-1280x534-1200.png);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  &__title {
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-main);
+
+    &--smaller {
+      font-size: 30px;
+      line-height: 34px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffa5ba;
+    }
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    line-height: 176%;
+    margin-bottom: 35px;
+
+    &--color {
+      font-family: 'DM Sans';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 194%;
+      color: #907e82;
+    }
+  }
+  &__btn {
+    background-color: white;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--text-color-main);
+    border-radius: 22px;
+    border: none;
+    width: 174px;
+    height: 44px;
+
+    &:hover {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__numbers {
+    font-family: 'Titan One';
+    font-size: 58px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: var(--text-color-main);
+  }
+  &__body {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
