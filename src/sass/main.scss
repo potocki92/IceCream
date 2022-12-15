@@ -4,6 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import '../sass/utils/media-query';
-
+@import './sass/utils/media-query';
+@import './general';
+@import './utils/variables';
 @import './example';
+@import './components/about';
