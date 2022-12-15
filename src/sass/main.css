@@ -27,4 +27,8 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.footer {
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
