@@ -78,9 +78,6 @@ body {
   background-image: url('../images/demo.jpg');
   background-size: cover;
   background-position: center;
-<<<<<<< Updated upstream
-}/*# sourceMappingURL=main.css.map */
-=======
 }
 
 * {
@@ -198,5 +195,4 @@ body {
   font-weight: 700;
   line-height: 176%;
   letter-spacing: 0.02em;
-} /*# sourceMappingURL=main.css.map */
->>>>>>> Stashed changes
+}
