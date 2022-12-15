@@ -1,0 +1,17 @@
+.menu-mobile-bar {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+    &__logo {
+        align-self: center;
+    }
+}

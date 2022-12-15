@@ -1,11 +1,15 @@
-<header class="menu-border">
+<header class="menu-background"><!-- clasa powinna zawierać tło z kółkiem  -->
+    <img src="" alt="rozek-wielokolorowy" srcset="">
     <div class="menu-mobile-bar">
-        <a class="logo logo--color menu-mobile-bar__logo" href="index.html">WebStudio</a>
-        <button type="button" class="toggle-button js-open-menu">
+        <a class="logo" href="index.html"><img src="../images/global/logo-1-199x50.png" alt="Logo-i-ikona-png" srcset="../images/retina/logo-1-398x100-2x.png 2x
+            " sizes=""></a>
+        <button type="button" class="toggle-button js-open-menu"> Here should be SVG
             <!-- <svg width="40px" height="40px" class="toggle-button__icon">
                 <use href="images/icons.svg#icon-mobile-menu"></use>
             </svg> -->
         </button>
+        <button type="button" class="">Buy now</button> <!-- button default display:none not shown in mobile -->
+        <!-- THIS IS OPEN MOBILE MENU nie wszystko zrobione -->
         <div class="menu-mobile js-menu-container" id="mobile-menu">
             <button type="button" class="toggle-button menu-mobile__toggle-button js-close-menu">
                 <!-- <svg width="40px" height="40px" class="toggle-button__icon">
@@ -14,42 +18,37 @@
             </button>
             <nav class="menu-mobile__navigation">
                 <a class="menu-mobile__link menu-mobile__link--present" href="index.html#Agencja">Agencja</a>
-                <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+                <!-- <a class="menu-mobile__link" href="portfolio.html">Portfolio</a> -->
                 <a class="menu-mobile__link" href="#Kontakt">Kontakt</a>
             </nav>
+        </div>
+        <!-- THIS IS REST OF HEADER-->
             <div>
-                <ul class="menu-mobile__contact-group">
-                    <li><a class="menu-mobile__link menu-mobile__link--phone" href="tel:+48111111111">+48 111 111
-                            111</a></li>
-                    <li><a class="menu-mobile__link menu-mobile__link--mail"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                </ul>
-                <ul class="menu-mobile__social-media">
-                    <li>
-                        <a href="" target="_blank" rel="external noopener noreferrer"
-                            class="menu-mobile__link menu-mobile__link--social">Instagram</a>
-                    </li>
-                    <li class="menu-mobile__social-list">
-                        <a href="" target="_blank" rel="external noopener noreferrer"
-                            class="menu-mobile__link menu-mobile__link--social">Twitter</a>
-                    </li>
-                    <li class="menu-mobile__social-list">
-                        <a href="" target="_blank" rel="external noopener noreferrer"
-                            class="menu-mobile__link menu-mobile__link--social">Facebook</a>
-                    </li>
-                    <li class="menu-mobile__social-list">
-                        <a href="" target="_blank" rel="external noopener noreferrer"
-                            class="menu-mobile__link menu-mobile__link--social">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+            <h1>ice cream made with passion</h1>
+            <a href="index.html#Products"><button type="button" class="">Products</button></a>
+            <a href="index.html#How-its-made"><button type="button" class="">How its made?</button></a>
+        </div>
+        <div><!-- Laska + liczba kafejek + liczba foodtracków default display:none -->
+            <p>16 cafes</p>
+            <p>23 food trucks</p>
+        </div>
+        <div><!-- Mleko + lorem + button default display:none -->
+            <img src="" alt="mleko-w-dzbanku" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+            <button type="button" class=""> Here should be SVG strzałka
+                <!-- <svg width="40px" height="40px" class="toggle-button__icon">
+                                    <use href="images/icons.svg#icon-mobile-menu"></use>
+                                </svg> -->
+            </button>
         </div>
     </div>
-    <div class="menu container">
+    <!-- THIS IS DESKTOP MENU -->
+    <!-- <div class="menu container">
         <a class="logo logo--color" href="index.html">WebStudio</a>
         <nav class="nav-submenu">
             <a class="nav-submenu__link nav-submenu__link--present" href="index.html#Agencja">Agencja</a>
-            <a class="nav-submenu__link" href="portfolio.html">Portfolio</a>
+            
             <a class="nav-submenu__link" href="#Kontakt">Kontakt</a>
         </nav>
         <div class="menu-right">
@@ -62,5 +61,5 @@
                     <use href="images/icons.svg#icon-phone"></use>
                 </svg>+48 111 111 111</a>
         </div>
-    </div>
+    </div> -->
 </header>

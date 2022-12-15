@@ -1,0 +1,10 @@
+.menu {
+  height: 79px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phone {
+    display: none;
+  }
+}
