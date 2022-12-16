@@ -4,4 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './utils/media-query';
+@import './general';
+@import './utils/variables';
 @import './example';
+@import './components/about';
