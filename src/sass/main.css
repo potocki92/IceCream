@@ -3,6 +3,52 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul, li, a, p, span {
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  font-family: "DM Sans", "Titan One", sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.item {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -144,4 +190,100 @@
   font-weight: 700;
   line-height: 176%;
   letter-spacing: 0.02em;
+}
+
+.footer-section {
+  padding: 113px 20px;
+  padding-bottom: 25px;
+  background-color: rgb(255, 245, 246);
+}
+
+.footer {
+  padding-bottom: 43px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.footer__description {
+  font-family: inherit;
+  margin-bottom: 43px;
+}
+
+.footer__title {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: rgb(255, 165, 186);
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 1.17;
+  margin-bottom: 17px;
+}
+
+.footer__credo {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: rgb(212, 20, 67);
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.footer-social__list {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  justify-content: end;
+}
+
+.footer-socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(254, 165, 187);
+  border-radius: 50%;
+}
+.footer-socials__item:hover {
+  background-color: rgb(212, 20, 67);
+}
+@media screen and (min-width: 768px) {
+  .footer-socials__item {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer-socials__icon {
+  fill: rgb(255, 255, 255);
+}
+
+.footer__contact {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.86;
+  text-align: right;
+  margin-top: 46px;
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: rgb(212, 20, 67);
+}
+
+.copyright {
+  padding-top: 22px;
+  size: 14px;
+  font-weight: 700;
+  line-height: 1.52;
+  color: rgb(144, 126, 130);
+  text-align: center;
+  border-top: 1px solid rgb(225, 225, 225);
 }/*# sourceMappingURL=main.css.map */
