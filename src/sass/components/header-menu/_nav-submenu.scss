@@ -1,0 +1,48 @@
+.nav-submenu {
+  vertical-align: middle;
+  display: flex;
+  width: 282px;
+  justify-content: space-between;
+
+  @include desktop {width: 254px;
+  transform: translateX(-129px);}
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: getColor(main-font);
+    line-height: $line-height-for-font-14;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    transition: color $transition-time-timing;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:focus,
+    &:hover {
+      color: getColor(highlighter);
+    }
+  }
+
+  &__link--present {
+    position: relative;
+    color: getColor(highlighter);
+
+    &::after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: -204%;
+      background: linear-gradient(getColor(highlighter), getColor(highlighter));
+      border-radius: 2px;
+    }
+
+    &:visited {
+      color: getColor(highlighter);
+    }
+  }
+}

@@ -3,6 +3,52 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul, li, a, p, span {
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  font-family: "DM Sans", "Titan One", sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.item {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -29,95 +75,119 @@
   background-position: center;
 }
 
-.footer-section {
-  padding: 113px 20px;
-  padding-bottom: 25px;
-  background-color: rgb(255, 245, 246);
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
 }
 
-.footer {
-  padding-bottom: 43px;
+.section {
+  padding-top: 125px;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-widht: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
-.footer__description {
-  margin-bottom: 43px;
-}
-
-.footer__title {
-  text-transform: uppercase;
-  color: rgb(255, 165, 186);
-  font-size: 18px;
-  font-weight: 400px;
-  line-height: 1.17;
-  margin-bottom: 17px;
-}
-
-.footer__credo {
-  text-transform: uppercase;
-  color: rgb(212, 20, 67);
-  font-size: 34px;
-  line-height: 1.15;
+.about {
+  background-color: #FFF5F6;
+  background-image: url(../images/1200/sectionbg1-1280x534-1200.png);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
+  font-family: "Titan One";
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.04em;
 }
-
-.footer-social__list {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-  justify-content: end;
+.about__title {
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
 }
-
-.footer-socials__item {
+.about__title--smaller {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.about__slider {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
-  background-color: rgb(254, 165, 187);
-  border-radius: 50%;
 }
-.footer-socials__item:hover {
-  background-color: rgb(212, 20, 67);
+.about__slider ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-@media screen and (min-width: 768px) {
-  .footer-socials__item {
-    width: 34px;
-    height: 34px;
-  }
+.about__text {
+  font-family: "DM Sans";
+  font-weight: 500;
+  line-height: 176%;
+  margin-bottom: 35px;
 }
-
-.footer-socials__icon {
-  fill: rgb(255, 255, 255);
+.about__text--color {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  color: #907E82;
+  margin-bottom: 45px;
 }
-
-.footer__contact {
-  color: rgb(0, 0, 0);
-  font-size: 13px;
+.about__btn {
+  background-color: white;
+  font-family: "DM Sans";
   font-weight: 700;
-  line-height: 1.86;
-  text-align: right;
-  margin-top: 46px;
+  line-height: 21px;
+  color: #D41443;
+  border-radius: 22px;
+  border: none;
+  width: 174px;
+  height: 44px;
 }
-
-.footer__phone {
-  text-decoration: none;
-  color: rgb(212, 20, 67);
+.about__btn:hover {
+  background-color: #ecebeb;
 }
-
-.copyright {
-  padding-top: 22px;
-  size: 14px;
+.about__list {
+  display: flex;
+  flex-direction: row;
+}
+.about__numbers {
+  font-family: "Titan One";
+  font-size: 58px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.about__body {
+  font-family: "DM Sans";
   font-weight: 700;
-  line-height: 1.52;
-  color: rgb(144, 126, 130);
-  text-align: center;
-  border-top: 1px solid rgb(225, 225, 225);
+  line-height: 176%;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=main.css.map */
