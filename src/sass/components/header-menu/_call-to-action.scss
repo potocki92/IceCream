@@ -1,0 +1,24 @@
+.call-to-action {
+    position: absolute;
+    left: 20px;
+
+    &__headline {
+        font-family: 'Titan One';
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    &__headline::part(passion) {
+        // font-family: 'Titan One';
+        font-size: 48px;
+        line-height: 0.96;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: getColor(dark-pink);
+    }
+}

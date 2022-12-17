@@ -1,9 +1,10 @@
 <header class="menu-background">
     <div class="menu-background__ice-container">
-    <svg class="menu-background__svg" width="346px" height="344px">
-        <ellipse class="menu-background__elipse" rx="50%" ry="50%" cx="50%" cy="50%" />
-    </svg>
-    <img class="menu-background__ice" src="images/mobile/slider-pic7-171x410.png" alt="rozek-wielokolorowy" srcset="">
+        <svg class="menu-background__svg" width="346px" height="344px">
+            <ellipse class="menu-background__elipse" rx="50%" ry="50%" cx="50%" cy="50%" />
+        </svg>
+        <img class="menu-background__ice" src="images/mobile/slider-pic7-171x410.png" alt="rozek-wielokolorowy" srcset="
+">
     </div>
     <div>
         <div class="menu-mobile-bar">
@@ -15,9 +16,9 @@
                         <use href="images/icons.svg#icon-menu-burger"></use>
                     </svg>
                 </button>
-                <button type="button" class="buy-button buy-button--bar-hidden">Buy now</button>
-            </div> <!-- button default display:none not shown in mobile -->
-            <!-- THIS IS OPEN MOBILE MENU nie wszystko zrobione -->
+                <button type="button" class="buy-button buy-button--bar-hidden">Buy now</button><!-- button default display:none not shown in mobile -->
+            </div>
+            <!-- THIS IS OPEN MOBILE MENU brak zapytań o media dla tabletu-->
             <div class="menu-mobile js-menu-container" id="mobile-menu">
                 <button type="button" class="menu-mobile__toggle-button js-close-menu">
                     <svg width="14px" height="14px" class="menu-mobile__toggle-button-icon">
@@ -29,24 +30,24 @@
                     <a class="menu-mobile__link menu-mobile__link--present" href="index.html">Home</a>
                     <a class="menu-mobile__link" href="#about-us">About us</a>
                     <a class="menu-mobile__link" href="#how-its-made">How it's made?</a>
-                    <a class="menu-mobile__link" href="#our-products">Our products</a>
+                    <a class="menu-mobile__link" href="#products">Our products</a>
                     <a class="menu-mobile__link menu-mobile__link--last" href="#contact">Contact</a>
                 </nav>
             </div>
             <!-- THIS IS REST OF HEADER-->
         </div>
-        <div>
-            <h1>ice cream made with passion</h1>
-            <a href="index.html#Products"><button type="button" class="">Products</button></a>
-            <a href="index.html#How-its-made"><button type="button" class="">How its made?</button></a>
+        <div class="call-to-action">
+            <h1 class="call-to-action__headline">ice cream made with passion</h1>
+            <a href="#products"><button type="button" class="">Products</button></a>
+            <a href="#how-its-made"><button type="button" class="">How its made?</button></a>
         </div>
         <div><!-- Laska + liczba kafejek + liczba foodtracków default display:none -->
-            <img src="" alt="laska-" srcset="">
+            <img src="images/768/slider-pic4-168x133-768.png" alt="laska" srcset="">
             <p>16 cafes</p>
             <p>23 food trucks</p>
         </div>
-        <div><!-- Mleko + lorem + button default display:none -->
-            <img src="" alt="mleko-w-dzbanku" srcset="">
+        <div style="display:none"><!-- Mleko + lorem + button default display:none -->
+            <img src="images/768/slider-pic5-124x126-768.png" alt="mleko-w-dzbanku" srcset="">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
             <button type="button" class=""> Here should be SVG strzałka
