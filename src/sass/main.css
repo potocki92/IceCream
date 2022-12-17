@@ -144,4 +144,38 @@
   font-weight: 700;
   line-height: 176%;
   letter-spacing: 0.02em;
+}
+
+.gallery {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image: linear-gradient(to bottom, .gallery light-pink 40%, .gallery light-grey), url(../images/mobile/gallery-mobile@1x.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery {
+    background-image: linear-gradient(to bottom, .gallery light-pink 40%, .gallery light-grey), url(../images/mobile/gallery-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, .gallery light-pink 40%, .gallery light-grey), url(../images/768/gallery-tablet@1x.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: linear-gradient(to bottom, .gallery light-pink 40%, .gallery light-grey), url(../images/768/gallery-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, .gallery light-pink 40%, .gallery light-grey), url(../images/1200/gallery-desktop@1x.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: linear-gradient(to bottom, .gallery light-pink, .gallery light-grey), url(..//images/1200/gallery-desktop@2x.png);
+  }
 }/*# sourceMappingURL=main.css.map */
