@@ -5,16 +5,23 @@
   background-color: getColor(pinky);
   overflow: hidden;
 
+  &__ice-container {
+    position: absolute;
+    bottom: 0px;
+    right: -19vw;
+    height: 419px;
+  }
+
   &__ice {
     position: absolute;
     bottom: 0px;
-    left: 36vw;
+    left: 81px;
   }
+
   &__svg {
-    position: absolute;
-    top: 83px;
-    left: 14vw;
-  }
+    position: relative;
+    top: 0;
+      }
 
   &__elipse {
     fill: #FFA5BA;
