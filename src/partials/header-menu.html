@@ -19,7 +19,6 @@
           (min-width: 1200px) 236 px,
           100vw" />
     </div>
-
     <div class=" menu-mobile-bar">
         <a class="logo" href="index.html"><img src="images/global/logo-1-199x50.png" alt="Logo-i-ikona-png" srcset="./images/retina/logo-1-398x100-2x.png 2x
             "></a>
@@ -30,17 +29,20 @@
                 </svg>
             </button>
             <button type="button" class="buy-button buy-button--bar-hidden">Buy
-                now</button><!-- button default display:none not shown in mobile SVG TICK-->
+                now <svg width="4px" height="8px" class="buy-button__icon-send">
+                    <use href="images/icons.svg#icon-button-arrow"></use>
+                </svg>
+            </button><!-- button default display:none not shown in mobile -->
         </div>
         <!-- THIS IS REST OF HEADER-->
     </div>
     <div class="call-to-action">
         <h1 class="call-to-action__headline">ice cream made with <span
                 class="call-to-action__headline-accent">passion</span></h1>
-        <a class="call-to-action__link" href="#products"><button type="button"
-                class="call-to-action__button1 call-to-action__button1--accent">Products</button></a>
-        <a class="call-to-action__link" href="#how-its-made"><button type="button" class="call-to-action__button1">
-                How its made?</button></a>
+        <button type="button" class="call-to-action__button1 call-to-action__button1--accent"><a
+                class="call-to-action__link" href="#products">Products</a></button>
+        <button type="button" class="call-to-action__button1">
+            <a class="call-to-action__link" href="#how-its-made">How its made? </a></button>
     </div>
     <div class="informationals"><!-- Laska + liczba kafejek + liczba foodtracków phone - opacity: 0 -->
         <img class="informationals__photo" src="images/768/slider-pic4-168x133-768.png" alt="laska" srcset="
@@ -65,7 +67,7 @@
             incididunt ut labore et
         </p>
         <button type="button" class="milk-info__button">
-            <svg width="12px" height="12px" class="milk-info__icon">
+            <svg width="18px" height="18px" class="milk-info__icon">
                 <use href="images/icons.svg#icon-circle-arrow-right"></use>
             </svg>
         </button>
@@ -77,7 +79,9 @@
                 <use href="images/icons.svg#icon-close-cross"></use>
             </svg>
         </button>
-        <button type="button" class="buy-button buy-button--mobile">Buy now</button>
+        <button type="button" class="buy-button buy-button--mobile">Buy now <svg width="4px" height="8px" class="buy-button__icon-send">
+            <use href="images/icons.svg#icon-button-arrow"></use>
+        </svg></button>
         <nav class="menu-mobile__navigation">
             <a class="menu-mobile__link menu-mobile__link--present" href="index.html">Home</a>
             <a class="menu-mobile__link" href="#about-us">About us</a>

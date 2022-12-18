@@ -38,7 +38,17 @@
     }
 
     &__icon-send {
-        margin-left: 24px;
-        fill: #fff;
+        margin-left: 16px;
+        fill: transparent;
+        stroke: getColor(dark-pink);
+
+        @include tablet {
+            margin-left: 12px;
+        }
+
+        @include desktop {
+            margin-left: 12px;
+        }
+
     }
 }

@@ -43,12 +43,12 @@
         border: 0;
         margin-left: 120px;
         margin-top: 7px;
+        padding: 0;
     }
 
     &__icon {
         margin: auto;
         fill: getColor(dark-pink);
-        stroke: getColor(dark-pink);
     }
 
 }

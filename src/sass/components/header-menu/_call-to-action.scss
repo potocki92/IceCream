@@ -48,6 +48,18 @@
         display: block;
         width: fit-content;
         height: fit-content;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: center;
+        color: inherit;
+
+        &:visited {
+            color: inherit;
+        }
+
     }
 
     &__button1 {
@@ -55,12 +67,6 @@
         width: fit-content;
         height: 24px;
         border-radius: 12px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 8px;
-        line-height: 1.25;
-        text-align: center;
         color: getColor(dark-pink);
         border: 0px;
         padding: 7px 13px;
@@ -74,6 +80,10 @@
         &--accent {
             background: getColor(dark-pink);
             color: #fff;
+
+            &:hover {
+                background-color: getColor(dark-pink);
+            }
         }
     }
 }
