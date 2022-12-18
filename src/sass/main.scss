@@ -21,21 +21,13 @@
 ============================================= */
 
 /* HEADER */
-@import './components/header-menu/is-open';
-@import './components/header-menu/menu-background';
-@import './components/header-menu/menu-left';
-@import './components/header-menu/menu-mobile-bar';
-@import './components/header-menu/menu-mobile';
-@import './components/header-menu/menu-right';
-@import './components/header-menu/menu';
-@import './components/header-menu/nav-submenu';
-@import './components/header-menu/toggle-button';
+@import './components/header-menu';
 
 /* ABOUT */
 @import './components/about';
 
 /* ADVANTAGES */
-@import './components/advantages';
+// @import './components/advantages';
 
 /* GALLERY */
 @import './components/gallery';
