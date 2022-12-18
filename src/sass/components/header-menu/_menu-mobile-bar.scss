@@ -1,17 +1,27 @@
 .menu-mobile-bar {
-    padding: 10px 15px;
+    padding: 6px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
 
     @include tablet {
-        display: none;
+        padding: 37px 34px 0;
     }
 
     @include desktop {
         display: none;
     }
 
-    &__logo {
-        align-self: center;
+    &__container {
+        width: fit-content;
+
+        @include tablet {
+            width: 210px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
