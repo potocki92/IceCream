@@ -1,8 +1,6 @@
 /*do uzupełnienia wartości ze zmiennych znajdujące sie wewnątrz główneg projektu*/
 
 .contacts {
-    padding-top: 50px;
-    padding-bottom: 50px;
 
     background-image: linear-gradient(to bottom,
         rgb(255, 255, 255) 8%,
@@ -50,6 +48,10 @@
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     box-sizing: inherit;
+    @media screen and (max-width: 767px) {
+        max-width: 220px;
+    }
+    
     @media screen and (min-width: 768px) {
         padding: 50px 31px 50px 31px;
         width: calc((100% - 40px) / 3);
@@ -64,10 +66,17 @@
 .contacts__category {
     background-color: rgba(240, 209, 165, 1);
     width: 73px;
-    height: 28px;
+    height: 16px;
     border-radius: 6px;
-    text-align: center;
     margin-bottom: 32px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        height: 28px;
+    }
+    @media screen and (min-width: 1280px) {
+        height: 28px;
+    }
 }
 
 .contacts__category--other {
@@ -81,7 +90,7 @@
     color: white;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22.32px;
+    line-height: 17.32px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
         @media screen and (min-width: 768px) {
