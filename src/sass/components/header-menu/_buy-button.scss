@@ -20,6 +20,10 @@
         width: 209px;
         margin-left: auto;
         margin-right: auto;
+
+        @include tablet {
+            width: 186px;
+        }
     }
 
     &--bar-hidden {

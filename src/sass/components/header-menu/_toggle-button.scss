@@ -5,8 +5,9 @@
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: getColor(pinky);
+    background-color: transparent;
     stroke: getColor(dark-pink);
+    z-index: 2;
 
     &:active {
         stroke: getColor(dark-pink);
@@ -20,4 +21,5 @@
     &__icon {
         margin: auto;
 
-}}
+    }
+}

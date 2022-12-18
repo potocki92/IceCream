@@ -1,24 +1,71 @@
 .call-to-action {
+    width: 218px;
     position: absolute;
     left: 20px;
+    top: 193px;
+
+    @include tablet {
+        width: 162px;
+        left: 34px;
+        top: 102px;
+    }
 
     &__headline {
         font-family: 'Titan One';
+        font-weight: 400;
         font-size: 26px;
         line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-
         color: #FFFFFF;
+        padding-bottom: 20px;
+        width: fit-content;
+
+        @include tablet {
+            font-size: 22px;
+            line-height: 1.14;
+        }
     }
 
-    &__headline::part("passion") {
-        // font-family: 'Titan One';
+    &__headline-accent {
+        font-family: 'Titan One';
+        font-weight: 400;
         font-size: 48px;
         line-height: 0.96;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-
         color: getColor(dark-pink);
+
+        @include tablet {
+            font-size: 34px;
+            line-height: 0.91;
+        }
+    }
+
+    &__button1 {
+        background: #fff;
+        width: fit-content;
+        height: 24px;
+        border-radius: 12px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: center;
+        color: getColor(dark-pink);
+        border: 0px;
+        padding: 7px;
+        margin-right: 7px;
+
+        &:hover {
+            cursor: pointer;
+            background: #ECEBEB;
+        }
+
+        &--accent {
+            background: getColor(dark-pink);
+            color: #fff;
+        }
     }
 }
