@@ -16,6 +16,14 @@
         pointer-events: none;
     }
 
+    @include desktop {
+        width: 416px;
+        height: 191px;
+        bottom: 45px;
+        left: 77px;
+        bottom: 45px;
+    }
+
     &__photo {
         position: absolute;
         left: 0;
@@ -32,6 +40,13 @@
         line-height: 1.5;
         color: #fff;
 
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.42;
+            padding-left: 218px;
+            padding-top: 56px;
+        }
+
     }
 
     &__button {
@@ -44,11 +59,20 @@
         margin-left: 120px;
         margin-top: 7px;
         padding: 0;
+
+        @include desktop {
+            width: 24px;
+            height: 24px;
+            margin-left: 218px;
+            margin-top: 20px;
+        }
     }
 
     &__icon {
+        display: block;
+        width: inherit;
+        height: inherit;
         margin: auto;
-        fill: getColor(dark-pink);
     }
 
 }

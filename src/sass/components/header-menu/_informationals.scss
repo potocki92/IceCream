@@ -16,10 +16,20 @@
         pointer-events: none;
     }
 
+    @include desktop {
+        height: 505px;
+        top: 160px;
+        right: 109px;
+    }
+
     &__photo {
         position: absolute;
         bottom: 0;
         display: block;
+
+        @include desktop {
+            right: 12px;
+        }
     }
 
     &__sites {
@@ -34,6 +44,12 @@
         position: relative;
         padding-right: 8px;
 
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.29;
+            width: 82px;
+            padding-right: 6px;
+        }
 
         &::first-line {
             font-family: 'Titan One';
@@ -46,6 +62,11 @@
             text-transform: uppercase;
             color: getColor(dark-pink);
             margin-bottom: 13px;
+
+            @include desktop {
+                font-size: 46px;
+                line-height: 1.15;
+            }
         }
 
         &::after {
@@ -59,6 +80,13 @@
             background: #FFFFFF;
             border-radius: 50%;
             z-index: -1;
+
+            @include desktop {
+                width: 30px;
+                height: 30px;
+                right: -12px;
+                top: -4px;
+            }
         }
     }
 }

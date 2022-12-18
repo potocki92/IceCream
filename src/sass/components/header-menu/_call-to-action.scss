@@ -12,6 +12,12 @@
         top: 102px;
     }
 
+    @include desktop {
+        width: 227px;
+        left: 115px;
+        top: 171px;
+    }
+
     &__headline {
         font-family: 'Titan One';
         font-weight: 400;
@@ -27,6 +33,11 @@
             font-size: 22px;
             line-height: 1.14;
         }
+
+        @include desktop {
+            font-size: 38px;
+            padding-bottom: 25px;
+        }
     }
 
     &__headline-accent {
@@ -41,6 +52,10 @@
         @include tablet {
             font-size: 34px;
             line-height: 0.91;
+        }
+
+        @include desktop {
+            font-size: 58px;
         }
     }
 
@@ -58,6 +73,10 @@
 
         &:visited {
             color: inherit;
+        }
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.29;
         }
 
     }
@@ -77,11 +96,17 @@
             background: #ECEBEB;
         }
 
+        @include desktop {
+            height: 40px;
+            padding: 11px 13px;
+        }
+
         &--accent {
             background: getColor(dark-pink);
             color: #fff;
 
             &:hover {
+                cursor: pointer;
                 background-color: getColor(dark-pink);
             }
         }
