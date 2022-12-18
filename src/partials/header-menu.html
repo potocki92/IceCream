@@ -53,23 +53,37 @@
     <div class="call-to-action">
         <h1 class="call-to-action__headline">ice cream made with <span
                 class="call-to-action__headline-accent">passion</span></h1>
-        <a href="#products"><button type="button"
+        <a class="call-to-action__link" href="#products"><button type="button"
                 class="call-to-action__button1 call-to-action__button1--accent">Products</button></a>
-        <a href="#how-its-made"><button type="button" class="call-to-action__button1">How its made?</button></a>
+        <a class="call-to-action__link" href="#how-its-made"><button type="button" class="call-to-action__button1">
+            How its made?</button></a>
     </div>
     <div class="informationals"><!-- Laska + liczba kafejek + liczba foodtracków phone - opacity: 0 -->
-        <img class="informationals__foto" src="images/768/slider-pic4-168x133-768.png" alt="laska" srcset="">
+        <img class="informationals__photo" src="images/768/slider-pic4-168x133-768.png" alt="laska" srcset="
+          ./images/768/slider-pic4-168x133-768.png 168w,
+          ./images/1200/slider-pic4-293x232-1200.png 293w,
+          ./images/retina/slider-pic4-336x266-768-2x.png 336w,
+          ./images/retina/slider-pic4-586x464-1200-2x.png 586w
+          " sizes="
+          ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 168px,
+          ((min-width: 768px) and (max-width:1199px)) 168px,
+          (max-width: 767px) 168px,
+          (min-width: 1200px) 293 px,
+          ((min-width: 768px) and (max-width:1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 336px,
+          ((min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 586px,
+          100vw" />
         <p class="informationals__sites">16 cafes</p>
         <p class="informationals__sites">23 food trucks</p>
     </div>
-    <div style="display:none"><!-- Mleko + lorem + button default display:none -->
-        <img src="images/768/slider-pic5-124x126-768.png" alt="mleko-w-dzbanku" srcset="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    <div class="milk-info"><!-- Mleko + lorem + button default display:none -->
+        <img class="milk-info__photo" src="images/768/slider-pic5-124x126-768.png" alt="mleko-w-dzbanku" srcset="">
+        <p class="milk-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
         </p>
-        <button type="button" class=""> Here should be SVG strzałka
-            <svg width="40px" height="40px" class="toggle-button__icon">
-                                                <use href="images/icons.svg#icon-button-arrow"></use>
-                                            </svg>
+        <button type="button" class="milk-info__button"> Here should be SVG strzałka
+            <svg width="12px" height="12px" class="milk-info__icon">
+                <use href="images/icons.svg#icon-circle-arrow-right"></use>
+            </svg>
         </button>
     </div>
     <!-- THIS IS DESKTOP MENU -->

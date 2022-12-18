@@ -3,6 +3,8 @@
     position: absolute;
     left: 20px;
     top: 193px;
+    display: flex;
+    flex-wrap: wrap;
 
     @include tablet {
         width: 162px;
@@ -42,6 +44,12 @@
         }
     }
 
+    &__link {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+
     &__button1 {
         background: #fff;
         width: fit-content;
@@ -55,7 +63,7 @@
         text-align: center;
         color: getColor(dark-pink);
         border: 0px;
-        padding: 7px;
+        padding: 7px 13px;
         margin-right: 7px;
 
         &:hover {

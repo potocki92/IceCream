@@ -1,0 +1,54 @@
+.milk-info {
+    position: absolute;
+    /* display: flex; */
+    // flex-direction: row;
+    // align-items: flex-end;
+    width: 234px;
+    height: 126px;
+    bottom: 28px;
+    left: 34px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include phone {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__photo {
+        position: absolute;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    &__text {
+        padding-top: 47px;
+        padding-left: 120px;
+        font-family: "DM Sans";
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.5;
+        color: #fff;
+
+    }
+
+    &__button {
+        display: block;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        border: 0;
+        margin-left: 120px;
+        margin-top: 7px;
+    }
+
+    &__icon {
+        margin: auto;
+        fill: getColor(dark-pink);
+        stroke: getColor(dark-pink);
+    }
+
+}
