@@ -1,12 +1,47 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
-@import './utils/media-query';
-@import './general';
+/* 
+=====================================
+=====================================
+            IMPORT SASS
+=====================================
+=====================================
+*/
+/* IMPORT UTILTS 
+============================================= */
 @import './utils/variables';
-@import './example';
+
+/* IMPORT GENERAL
+============================================= */
+@import './general';
+
+/* IMPORT MEDIA
+============================================= */
+@import './utils/media-query';
+
+/* IMPORT SECTIONS
+============================================= */
+
+/* HEADER */
+@import './components/header-menu/is-open';
+@import './components/header-menu/menu-background';
+@import './components/header-menu/menu-left';
+@import './components/header-menu/menu-mobile-bar';
+@import './components/header-menu/menu-mobile';
+@import './components/header-menu/menu-right';
+@import './components/header-menu/menu';
+@import './components/header-menu/nav-submenu';
+@import './components/header-menu/toggle-button';
+
+/* ABOUT */
 @import './components/about';
+
+/* ADVANTAGES */
+// @import './components/advantages';
+
+/* GALLERY */
 @import './components/gallery';
+
+/* CONTACTS */
+@import './components/contacts';
+
+/* FOOTER */
+@import './components/footer/footer';

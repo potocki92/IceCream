@@ -1,10 +1,30 @@
-.menu {
-  height: 79px;
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include phone {
-    display: none;
+.header__links {
+  padding-top: 6px;
+}
+.header__content {
+  position: relative;
+  overflow-x: clip;
+  height: calc(100vh - 60px);
+  .circle__container {
+    position: absolute;
+    height: 419px;
+    bottom: 0;
+  }
+  .circle {
+    position: absolute;
+    width: 344px;
+    height: 344px;
+    border-radius: 50%;
+    margin-left: 36px;
+    background-color: #ffa5ba;
+    .ice {
+      overflow: visible;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 9px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
