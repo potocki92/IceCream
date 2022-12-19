@@ -36,9 +36,9 @@
   //    @media screen and (min-width: 768px) {
   //   max-width: 620px;
   //   }
-//   @media screen and (min-width: 1280px) {
-//     padding: 0 87px;
-//   }
+  //   @media screen and (min-width: 1280px) {
+  //     padding: 0 87px;
+  //   }
 }
 
 /* The dot/bullet/indicator container */
@@ -71,7 +71,7 @@
   width: 50px;
   background-color: transparent;
   background-image: url(../images/home-slider.png);
-  
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
@@ -100,6 +100,7 @@
   margin-bottom: 78px;
   padding: 0 57px;
   max-width: 280px;
+  background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 1px, #e1e1e1 30px);
   @media screen and (min-width: 768px) {
     min-width: 620px;
     padding: 0 80px;
