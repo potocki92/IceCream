@@ -56,7 +56,7 @@
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 18px;
+  margin: 0 9px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 50%;
   display: inline-block;
@@ -66,7 +66,7 @@
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  margin: 0 0px;
+  margin: 0 -9px;
   height: 50px;
   width: 50px;
   background-color: transparent;
@@ -88,31 +88,57 @@
 }
 
 /* Add font atributes to the opinion */
-.customer__opinion {
-  position: relative;
-  color: rgba(0, 0, 0, 1);
+
+.custom-rev__text {
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
   letter-spacing: 0.04em;
+  // background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 1px, #e1e1e1 30px);
+  // z-index: 100;
+  // max-width: 280px;
+  margin-bottom: 51px;
+  padding: 43px 66px 26px 57px;
   background: rgba(250, 250, 250, 1);
 
-  margin-bottom: 78px;
-  padding: 0 57px;
-  max-width: 280px;
-  background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 1px, #e1e1e1 30px);
   @media screen and (min-width: 768px) {
-    min-width: 620px;
-    padding: 0 80px;
     font-size: 14px;
-    line-height: 2.16;
-    padding: 47px 80px 39px 87px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+}
+
+.customer__opinion {
+  position: relative;
+  // color: rgba(0, 0, 0, 1);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 2.55;
+
+  z-index: 10;
+
+  background: repeating-linear-gradient(#fafafa, #fafafa 30px, #e1e1e1 1px, #e1e1e1 31px);
+  @media screen and (min-width: 768px) {
+    // min-width: 620px;
+    // padding: 0 80px;
+    // font-size: 14px;
+    // line-height: 2.16;
+    // padding: 47px 80px 39px 87px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 926px;
-    padding: 47px 89px 34px 87px;
-    font-size: 12px;
-    line-height: 2.55;
+    // max-width: 926px;
+    // padding: 47px 89px 34px 87px;
+    // font-size: 12px;
+    // line-height: 2.55;
   }
 }
 
@@ -126,19 +152,26 @@
   top: 0;
   left: 0;
 }
-.customer__opinion::after {
+
+/* Add a blue color to the author */
+.author {
+  width: auto;
+  display: block;
+  position: relative;
+  color: inherit;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+}
+
+.author::before {
+  content: '';
   position: absolute;
   display: block;
   width: 100px;
   height: 20px;
-  content: '';
-
-  //   background-color: rebeccapurple;
-  bottom: -55px;
-  left: 50%;
-}
-
-/* Add a blue color to the author */
-.author {
-  color: inherit;
+  background-color: rebeccapurple;
+  top: -28px;
+  left: 36%;
 }
