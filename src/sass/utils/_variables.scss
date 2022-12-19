@@ -2,12 +2,17 @@
 =============================================*/
 $color: (
   'pinky': #ffb5ca,
+  'medium-pinky': #fea5bb,
+  'full-pinky': #ffa5ba,
   'dark-pink': #d41443,
   'light-pink': #fff5f6,
   'coffe': #f0d1a5,
   'green': #c2e297,
   'grey-text': #907e82,
   'light-grey': #e5e5e5,
+  'semi-white': #ffffff,
+  'grey-accent': #e1e1e1,
+  'light-brown': #907e82,
 );
 
 @function getColor($key) {

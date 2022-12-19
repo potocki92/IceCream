@@ -1,7 +1,7 @@
 .footer-section {
   padding: 113px 0px;
   padding-bottom: 25px;
-  background-color: rgba(255, 245, 246, 1);
+  background-color: getColor('light-pink');
 }
 
 .footer {
@@ -22,7 +22,7 @@
     max-width: 232px;
     font-family: 'Titan One';
     text-transform: uppercase;
-    color: rgba(255, 165, 186, 1);
+    color: getColor('full-pinky');
     font-size: 18px;
     font-weight: 400px;
     line-height: 1.17;
@@ -44,7 +44,7 @@
     max-width: 200px;
     font-family: 'Titan One';
     text-transform: uppercase;
-    color: rgba(212, 20, 67, 1);
+    color: getColor('dark-pink');
     font-size: 34px;
     line-height: 1.15;
     font-weight: 400;
@@ -62,7 +62,7 @@
   }
 
   &__contact {
-    color: rgba(0, 0, 0, 1);
+    // color: rgba(0, 0, 0, 1);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.86;
@@ -78,7 +78,7 @@
 
   &__phone {
     text-decoration: none;
-    color: rgba(212, 20, 67, 1);
+    color: getColor('dark-pink');
   }
 }
 
@@ -88,9 +88,9 @@
   size: 14px;
   font-weight: 700;
   line-height: 1.52;
-  color: rgba(144, 126, 130, 1);
+  color: getColor('light-brown');
   text-align: center;
-  border-top: 1px solid rgba(225, 225, 225, 1);
+  border-top: 1px solid getColor('grey-accent');
   letter-spacing: 0.02em;
   @media screen and (min-width: 768px) {
     line-height: 1.86;
@@ -115,14 +115,15 @@
     align-items: center;
     width: 32px;
     height: 32px;
-    background-color: rgba(254, 165, 187, 1);
+    background-color: getColor('medium-pinky');
     border-radius: 50%;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-time-timing;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: rgba(212, 20, 67, 1);
+      background-color: getColor('dark-pink');
     }
     @media screen and (min-width: 768px) {
       width: 34px;
@@ -132,6 +133,6 @@
 
   &__icon {
     padding: 0;
-    fill: rgba(255, 255, 255, 1);
+    fill: getColor('semi-white');
   }
 }
