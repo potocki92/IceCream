@@ -91,7 +91,7 @@
 
 .customers__text {
   padding: 43px 66px 26px 57px;
-  margin: 29px 20px 30px 20px;
+  margin: 29px 20px 52px 20px;
 
   width: 100%;
   background: #fafafa;
@@ -100,13 +100,13 @@
 
   @media screen and (min-width: 768px) {
     padding: 47px 80px 34px 80px;
-    margin: 19px 74px 24px 74px;
+    margin: 19px 74px 42px 74px;
     max-width: 620px;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 47px 80px 34px 80px;
-    margin: 15px auto;
+    margin: 0px auto 34px;
     max-width: 926px;
   }
 }
@@ -194,9 +194,11 @@
   content: '';
   position: absolute;
   display: block;
-  width: 100px;
-  height: 20px;
-  background-color: rebeccapurple;
+  width: 50px;
+  height: 4px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='32' height='4' viewBox='0 0 32 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3Ccircle cx='30' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
   top: -28px;
-  left: 36%;
+  left: 48%;
 }
