@@ -69,11 +69,6 @@
         font-size: 8px;
         line-height: 1.25;
         text-align: center;
-        color: inherit;
-
-        &:visited {
-            color: inherit;
-        }
 
         @include desktop {
             font-size: 14px;
@@ -98,6 +93,10 @@
             background: #ECEBEB;
         }
 
+        &:visited {
+            color: getColor(dark-pink);
+        }
+
         @include desktop {
             height: 40px;
             padding: 11px 13px;
@@ -117,6 +116,10 @@
             &:hover {
                 cursor: pointer;
                 background-color: getColor(dark-pink);
+            }
+
+            &:visited {
+                color: #fff;
             }
         }
     }
