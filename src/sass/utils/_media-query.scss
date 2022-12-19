@@ -44,12 +44,23 @@
   @media (min-width: 480px) and (max-width: 1199px) {
     @content;
   }
-}/// this one mixin is used in footer/_email-input.scss
+}
+
+/// this one mixin is used in footer/_email-input.scss
 @mixin phonex2 {
   @media (max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2) {
     @content;
   }
 }
+
 @mixin phone {
-  @media (max-width: 767px) {@content}
+  @media (max-width: 767px) {
+    @content
+  }
+}
+
+@mixin menu-desk {
+  @media (max-width: 1199px) {
+    @content
+  }
 }

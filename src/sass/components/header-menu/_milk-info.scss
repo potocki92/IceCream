@@ -1,8 +1,5 @@
 .milk-info {
     position: absolute;
-    /* display: flex; */
-    // flex-direction: row;
-    // align-items: flex-end;
     width: 234px;
     height: 126px;
     bottom: 28px;
@@ -59,6 +56,10 @@
         margin-left: 120px;
         margin-top: 7px;
         padding: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         @include desktop {
             width: 24px;

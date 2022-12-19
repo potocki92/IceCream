@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    transition: background-color $transition-time-timing;
 
     &--mobile {
         width: 209px;
