@@ -1,0 +1,44 @@
+.gallery {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  height: 122px;
+  background-image: url(../images/mobile/gallery-mobile@1x.png);
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(../images/mobile/gallery-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 264px;
+    background-image: url(../images/768/gallery-tablet@1x.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    height: 264px;
+    background-image: url(../images/768/gallery-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    height: 264px;
+    background-image: url(../images/1200/gallery-desktop@1x.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    height: 264px;
+    background-image: url(../images/1200/gallery-desktop@2x.png);
+  }
+}

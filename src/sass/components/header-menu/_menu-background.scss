@@ -1,0 +1,42 @@
+.menu-background {
+  position: relative;
+  height: 502px;
+  width: 100vw;
+  background-color: getColor(pinky);
+  overflow: hidden;
+
+  @include tablet {
+    height: 400px;
+  }
+
+  &__ice-container {
+    position: absolute;
+    bottom: 0px;
+    left: 11.25%;
+    height: 419px;
+
+    @include tablet {
+      height: 368px;
+      left: 40.36%;
+    }
+  }
+
+  &__ice {
+    position: absolute;
+    bottom: 0px;
+    left: 68px;
+  }
+
+  &__svg {
+    position: relative;
+    top: 0;
+
+    @include tablet {
+      transform: scale(0.936);
+    }
+  }
+
+  &__elipse {
+    fill: #FFA5BA;
+  }
+}

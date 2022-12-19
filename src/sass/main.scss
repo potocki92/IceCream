@@ -1,7 +1,44 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+/* 
+=====================================
+=====================================
+            IMPORT SASS
+=====================================
+=====================================
+*/
+/* IMPORT UTILTS 
+============================================= */
+@import './utils/variables';
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+/* IMPORT GENERAL
+============================================= */
+@import './general';
+
+/* IMPORT MEDIA
+============================================= */
+@import './utils/media-query';
+
+/* IMPORT SECTIONS
+============================================= */
+
+/* HEADER */
+@import './components/header-menu';
+
+/* ABOUT */
+@import './components/about';
+
+/* ADVANTAGES */
+// @import './components/advantages';
+
+/* GALLERY */
+@import './components/gallery';
+
+/* GALLERY */
+
+@import './components/customers-slider';
+
+
+/* CONTACTS */
+@import './components/contacts';
+
+/* FOOTER */
+@import './components/footer/footer';

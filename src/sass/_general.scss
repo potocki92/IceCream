@@ -1,0 +1,54 @@
+/* 
+=====================================
+=====================================
+              GENERAL
+=====================================
+=====================================
+*/
+
+/* RESET
+============================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  list-style-type: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* BODY
+============================================= */
+
+body {
+  font-family: 'DM Sans', 'Titan One', sans-serif;
+  font-size: 12px;
+}
+
+/* CONTAINER (CENTERING AND WIDTH)
+============================================= */
+.container {
+  max-width: 1280px; // nie powinna być maksymalna szerokość jak w desktopie? - Mateusz Ch.
+  margin: 0 auto;
+}
+
+/* GENERAL ITEM CLASS TO ALL LI
+============================================= */
+.item {
+  list-style: none;
+}

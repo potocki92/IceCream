@@ -1,0 +1,25 @@
+.toggle-button {
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    stroke: getColor(dark-pink);
+    z-index: 2;
+
+    &:active {
+        stroke: getColor(dark-pink);
+    }
+
+    &:visited {
+        stroke: getColor(dark-pink);
+    }
+
+
+    &__icon {
+        margin: auto;
+
+    }
+}

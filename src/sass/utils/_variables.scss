@@ -1,0 +1,19 @@
+/* VARIABLES  
+=============================================*/
+$color: (
+  'pinky': #ffb5ca,
+  'dark-pink': #d41443,
+  'light-pink': #fff5f6,
+  'coffe': #f0d1a5,
+  'green': #c2e297,
+  'grey-text': #907e82,
+  'light-grey': #e5e5e5,
+);
+
+@function getColor($key) {
+  @return map-get($color, $key);
+}
+
+$transition-time-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$line-height-for-font-14: 14px;
