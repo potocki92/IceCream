@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    transition: background-color $transition-time-timing;
 
     &--mobile {
         width: 209px;
@@ -38,7 +39,17 @@
     }
 
     &__icon-send {
-        margin-left: 24px;
-        fill: #fff;
+        margin-left: 16px;
+        fill: transparent;
+        stroke: getColor(dark-pink);
+
+        @include tablet {
+            margin-left: 12px;
+        }
+
+        @include desktop {
+            margin-left: 12px;
+        }
+
     }
 }

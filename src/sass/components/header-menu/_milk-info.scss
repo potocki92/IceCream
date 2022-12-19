@@ -1,8 +1,5 @@
 .milk-info {
     position: absolute;
-    /* display: flex; */
-    // flex-direction: row;
-    // align-items: flex-end;
     width: 234px;
     height: 126px;
     bottom: 28px;
@@ -14,6 +11,14 @@
     @include phone {
         opacity: 0;
         pointer-events: none;
+    }
+
+    @include desktop {
+        width: 416px;
+        height: 191px;
+        bottom: 45px;
+        left: 77px;
+        bottom: 45px;
     }
 
     &__photo {
@@ -32,6 +37,13 @@
         line-height: 1.5;
         color: #fff;
 
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.42;
+            padding-left: 218px;
+            padding-top: 56px;
+        }
+
     }
 
     &__button {
@@ -43,12 +55,25 @@
         border: 0;
         margin-left: 120px;
         margin-top: 7px;
+        padding: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include desktop {
+            width: 24px;
+            height: 24px;
+            margin-left: 218px;
+            margin-top: 20px;
+        }
     }
 
     &__icon {
+        display: block;
+        width: inherit;
+        height: inherit;
         margin: auto;
-        fill: getColor(dark-pink);
-        stroke: getColor(dark-pink);
     }
 
 }
