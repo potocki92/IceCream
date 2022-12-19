@@ -1,3 +1,24 @@
+.gallery-section {
+  padding-top: 97px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(
+    to bottom,
+
+    rgba(255, 245, 246, 1) 46.5%,
+    rgb(255, 255, 255, 1) 46.5%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  @media screen and (width-min: 1280px) {
+      background-image: linear-gradient(
+    to bottom,
+
+    rgba(255, 245, 246, 1) 42.5%,
+    rgb(255, 255, 255, 1) 42.5%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  }
+}
+
 .gallery {
   background-position: center;
   background-size: cover;
