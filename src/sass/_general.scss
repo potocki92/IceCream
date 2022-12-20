@@ -45,6 +45,10 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+  }
 }
 
 /* GENERAL ITEM CLASS TO ALL LI
@@ -56,5 +60,5 @@ body {
 /* SECTION (TOP AND BOTTOM PADDING)
 ============================================= */
 .section {
-  padding: 60px 15px;  // padding ustawiamy indywidualnie pod sekcje 
+  padding: 60px 15px; // padding ustawiamy indywidualnie pod sekcje
 }
