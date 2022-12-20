@@ -1,6 +1,8 @@
 .gallery-section {
   padding-top: 97px;
   padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
   background-image: linear-gradient(
     to bottom,
     
@@ -23,8 +25,8 @@
       background-image: linear-gradient(
         to bottom,
         
-        rgba(255, 245, 246, 1) 45.3%,
-        rgb(255, 255, 255, 1) 45.3%,
+        rgba(255, 245, 246, 1) 44.9%,
+        rgb(255, 255, 255, 1) 44.9%,
         rgba(255, 255, 255, 1) 100%
         );
         padding-top: 139px;
@@ -33,6 +35,7 @@
 }
 
 .gallery {
+  margin: 0;
   background-position: center;
   background-size: contain;
   max-width: 100%;
