@@ -3,25 +3,38 @@
   padding-bottom: 80px;
   background-image: linear-gradient(
     to bottom,
-
-    rgba(255, 245, 246, 1) 46.5%,
-    rgb(255, 255, 255, 1) 46.5%,
+    
+    rgba(255, 245, 246, 1) 48.8%,
+    rgb(255, 255, 255, 1) 48.8%,
     rgba(255, 255, 255, 1) 100%
-  );
-  @media screen and (min-width: 1280px) {
+    );
+    @media screen and (min-width: 768px) {
       background-image: linear-gradient(
-    to bottom,
-
-    rgba(255, 245, 246, 1) 42.5%,
-    rgb(255, 255, 255, 1) 42.5%,
-    rgba(255, 255, 255, 1) 100%
-  );
+        to bottom,
+        
+        rgba(255, 245, 246, 1) 46.7%,
+        rgb(255, 255, 255, 1) 46.7%,
+        rgba(255, 255, 255, 1) 100%
+        );
+        padding-top: 140px;
+        padding-bottom: 121px;
+  }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+        to bottom,
+        
+        rgba(255, 245, 246, 1) 45.3%,
+        rgb(255, 255, 255, 1) 45.3%,
+        rgba(255, 255, 255, 1) 100%
+        );
+        padding-top: 139px;
+        padding-bottom: 123px;
   }
 }
 
 .gallery {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   max-width: 100%;
   background-repeat: no-repeat;
   z-index: 10;
@@ -49,17 +62,17 @@
     background-image: url(../images/768/gallery-tablet@2x.png);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .gallery {
-    height: 264px;
+    height: 430px;
     background-image: url(../images/1200/gallery-desktop@1x.png);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .gallery {
-    height: 264px;
+    height: 430px;
     background-image: url(../images/1200/gallery-desktop@2x.png);
   }
 }
