@@ -1,9 +1,10 @@
  .products {
-    width: 100%;
-    margin-top: 121px;
-    margin-bottom: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 144px;
      
  }
+ 
 
  .products__label {
     color: #ffa5ba;
@@ -12,7 +13,8 @@
     font-size: 18px;
     text-align: center;
     line-height: 21px;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    margin-top: 150px;  
     
  }
 
@@ -25,20 +27,19 @@
     line-height: 39px;
     text-transform: uppercase;
     margin-top: 15px;
-    margin-bottom: 150px;
+   /* margin-bottom: 100px;*/
  }
+
 
  .products__container {
-    height: 485px;
-    width: 280px;
-    border-radius: 24px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 130px;
-    flex: wrap;
-    justify-content: center;
-    margin: auto;
-
     
  }
+
+ 
  .products__container--title {
    font-family: "Titan One";
    font-style: normal;
@@ -50,10 +51,33 @@
    letter-spacing: 0.04em;
    display: flex;
    justify-content: center;
-   padding-bottom: 50px;
    transform: translateY(-90px);
+   position: relative;
+   padding-bottom: 50px;
  }
- 
+
+  .products__container--picture::before {
+   transform: translate(20px,-113px);
+   position: relative;
+
+  }
+
+  .products__container--picture {
+   transform: translate(20px,-113px);
+} 
+
+
+   .products__container--title::after {
+   content: '';
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='26' height='6' viewBox='0 0 26 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='3' r='3' fill='white'/%3E%3Ccircle cx='3' cy='3' r='3' fill='white'/%3E%3Ccircle cx='23' cy='3' r='3' fill='white'/%3E%3C/svg%3E");
+   position: absolute;
+   bottom: -7px;
+   height: 6px;
+   width: 40px;
+   background-repeat: no-repeat;
+  transform: translatey(-10px);
+ }
+
 .products__container--text {
    font-family: "DM Sans";
    font-style: normal;
@@ -66,41 +90,162 @@
    padding-left: 41px;
    padding-right: 39px;
    padding-bottom: 150px;
+   display: flex;
+   align-items: center;
+   transform: translatey(-60px);
 
 }
+.products__container--arow{
+   height: 10px;
+   width: 10px;
+   color: red;
+}
 
-.products__container--picture {
-   transform: translate(20px,-113px);
-} 
+ 
  .products__container--pink {
-    background-color: #ffb8ca;
-    margin-bottom: 150px;
+    background-color: #ffb8ca;  
     border-radius: 24px;
     height: 485px;
     width: 280px;
-    position: relative;
-   
- 
+    margin-bottom: 100px;
  }
 
  .products__container--yellow {
     background-color: #f0d1a5;
-    margin-bottom: 150px;
     border-radius: 24px;
     height: 485px;
     width: 280px;
-    
- 
+    margin-bottom: 100px;
  }
+
 
  .products__container--green {
     background-color: #c2e297;
-    margin-bottom: 150px;
     border-radius: 24px;
     height: 485px;
     width: 280px;
-     
- 
+    margin-bottom: 100px;
  }
 
-  
+ .products__container--colors {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 22px;
+  /* margin: -115px;*/
+ }
+
+ .products__container--position {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+ }
+
+ .products__dots {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='26' height='6' viewBox='0 0 26 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='3' r='3' fill='white'/%3E%3Ccircle cx='3' cy='3' r='3' fill='white'/%3E%3Ccircle cx='23' cy='3' r='3' fill='white'/%3E%3C/svg%3E");
+   height: 6px;
+   width: 40px;
+   background-repeat: no-repeat;
+
+ }
+ .products__icon {
+   margin: auto;
+   fill: #d41443;
+   stroke: #d41443;
+   transform: translate(120px,-180px);
+ }
+
+ .products__button {
+   display: block;
+   background-color: #fff;
+   border-radius: 50%;
+   width: 18px;
+   height: 18px;
+   border: 0;
+ }
+
+ @include tablet {
+
+   .products__title {
+      font-size: 48px;
+      line-height: 55px;
+   }
+   .products__label {
+      font-size: 26px;
+      line-height: 30px;
+   }
+   .products__container--position {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+   }
+
+   .products__container--pink {
+      width: 220px;
+      margin-right: 0;
+   }
+   .products__container--yellow {
+      width: 220px;
+      margin-right: 0;
+      margin-left: 0;
+   }
+   .products__container--green {
+      width: 220px;
+      margin-left: 0;
+   }
+   .products__container--picture{
+      transform: translate(-10px,-115px);
+   }
+   .products__icon {
+      transform: translate(90px, -180px);
+   }
+   .products__container--text {
+      padding-left: 11px;
+      padding-right: 11px;
+   }
+}
+      
+
+ @include desktop {
+
+   .products__title {
+      font-size: 58px;
+      line-height: 66px;
+   }
+   .products__label {
+      font-size: 30px;
+      line-height: 34px;
+   }
+   .products__container--position {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+   }
+   .products__container--pink {
+      width: 330px;
+      margin-right: 0;
+   }
+   .products__container--yellow {
+      width: 330px;
+      margin-right: 0;
+      margin-left: 0;
+   }
+   .products__container--green {
+      width: 330px;
+      margin-left: 0;
+   }
+
+  .products__container--picture{
+      transform: translate(50px,-110px);
+   }
+   .products__icon {
+      transform: translate(140px, -170px);
+   }
+   .products__container--text {
+      padding-left: 44px;
+      padding-right: 44px;
+   }
+ }
+    
+ 
