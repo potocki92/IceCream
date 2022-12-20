@@ -8,6 +8,11 @@
 /* IMPORT UTILTS 
 ============================================= */
 @import './utils/variables';
+/* IMPORT UTILTS FOR CONTACTS 
+============================================= */
+@import './utils/backdrop';
+@import './utils/hidden-title';
+@import './utils/is-hidden';
 
 /* IMPORT GENERAL
 ============================================= */
@@ -39,6 +44,7 @@
 
 /* CONTACTS */
 @import './components/contacts';
+@import './components/modal-maps';
 
 /* FOOTER */
 @import './components/footer/footer';
