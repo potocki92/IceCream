@@ -10,7 +10,7 @@
         animation: fade-in 250ms forwards;
     }
 
-    &[data-modal-close] {
+    &[buy-modal-close] {
         display: block;
         pointer-events: none;
         inset: 0;
