@@ -22,3 +22,27 @@ $color: (
 $transition-time-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $line-height-for-font-14: 14px;
+
+$fonts-size: (
+  'section-size': 34px,
+  'section-size-small': 18px,
+  'section-tablet-size': 48px,
+  'section-tablet-size-small': 26px,
+  'section-desktop-size': 58px,
+  'section-desktop-size-small': 30px,
+
+  'content-size': 14px,
+  'content-size-small': 12px,
+  'advantages-size': 36px,
+  'advantages-tablet-size': 48px,
+  'advantages-desktop-size': 58px,
+
+  'products-size': 20px,
+  'products-desktop-size': 30px,
+
+  'small-size': 8px,
+);
+
+@function getFontSize($key) {
+  @return map-get($fonts-size, $key);
+}
