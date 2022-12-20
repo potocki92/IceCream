@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cream made with passion</title>
-    <link rel="icon" type="image/png" sizes="favicon-96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="favicon-96x96" href="./images/favicon-96x96.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -21,12 +21,10 @@
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/header-menu.html"></include>
-    <!-- <include src="./partials/about.html"></include> -->
+    <include src="./partials/about.html"></include>
     <!-- <include src="./partials/adventages.html"></include> -->
     <include src="./partials/gallery.html"></include>
     <!-- <include src="./partials/customer-review.html"></include> -->
-
-
 
     <include src="./partials/customers-slider.html"></include>
     <include src="./partials/contacts.html"></include>
@@ -43,35 +41,36 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/customers-slider.js"></script>
     <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-
-
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('mySlides');
+        var dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
   </body>
 </html>
