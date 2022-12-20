@@ -1,5 +1,5 @@
 .menu-background {
-  position: relative;
+  // position: relative;
   height: 502px;
   width: 100vw;
   background-color: getColor(pinky);
@@ -62,4 +62,9 @@
   &__elipse {
     fill: #FFA5BA;
   }
+}
+
+.container--menu-background {
+  position: relative;
+  height: inherit;
 }
