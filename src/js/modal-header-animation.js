@@ -9,7 +9,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModalAnimation);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('is-hidden-header');
     refs.modal.setAttribute('open', '');
     refs.modal.addEventListener(
       'animationend',
@@ -26,7 +26,7 @@
       'animationend',
       () => {
         refs.modal.removeAttribute('data-modal-close');
-        refs.modal.classList.toggle('is-hidden');
+        refs.modal.classList.toggle('is-hidden-header');
       },
       { once: true },
     );
