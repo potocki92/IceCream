@@ -16,11 +16,10 @@
           ((min-width: 768px) and (max-width:1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 286px,
           ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 342px,
           ((min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 472px,
-          (min-width: 1200px) 236 px,
-          100vw" />
+          (min-width: 1200px) 236px,
+          100vw">
     </div>
-
-    <div class=" menu-mobile-bar">
+    <div class="menu-mobile-bar">
         <a class="logo" href="index.html"><img src="images/global/logo-1-199x50.png" alt="Logo-i-ikona-png" srcset="./images/retina/logo-1-398x100-2x.png 2x
             "></a>
         <div class="menu-mobile-bar__container">
@@ -30,17 +29,19 @@
                 </svg>
             </button>
             <button type="button" class="buy-button buy-button--bar-hidden">Buy
-                now</button><!-- button default display:none not shown in mobile SVG TICK-->
+                now <svg width="4px" height="8px" class="buy-button__icon-send">
+                    <use href="images/icons.svg#icon-button-arrow"></use>
+                </svg>
+            </button><!-- button default display:none not shown in mobile -->
         </div>
         <!-- THIS IS REST OF HEADER-->
     </div>
     <div class="call-to-action">
         <h1 class="call-to-action__headline">ice cream made with <span
                 class="call-to-action__headline-accent">passion</span></h1>
-        <a class="call-to-action__link" href="#products"><button type="button"
-                class="call-to-action__button1 call-to-action__button1--accent">Products</button></a>
-        <a class="call-to-action__link" href="#how-its-made"><button type="button" class="call-to-action__button1">
-                How its made?</button></a>
+        <a class="call-to-action__link call-to-action__button1 call-to-action__button1--accent"
+            href="#products">Products</a>
+        <a class="call-to-action__link call-to-action__button1" href="#how-its-made">How its made? </a>
     </div>
     <div class="informationals"><!-- Laska + liczba kafejek + liczba foodtracków phone - opacity: 0 -->
         <img class="informationals__photo" src="images/768/slider-pic4-168x133-768.png" alt="laska" srcset="
@@ -52,22 +53,32 @@
           ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 168px,
           ((min-width: 768px) and (max-width:1199px)) 168px,
           (max-width: 767px) 168px,
-          (min-width: 1200px) 293 px,
+          (min-width: 1200px) 293px,
           ((min-width: 768px) and (max-width:1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 336px,
-          ((min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 586px,
-          100vw" />
+          ((min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 586px, 
+          100vw">
         <p class="informationals__sites">16 cafes</p>
         <p class="informationals__sites">23 food trucks</p>
     </div>
     <div class="milk-info"><!-- Mleko + lorem + button default display:none -->
-        <img class="milk-info__photo" src="images/768/slider-pic5-124x126-768.png" alt="mleko-w-dzbanku" srcset="">
+        <img class="milk-info__photo" src="images/768/slider-pic5-124x126-768.png" alt="mleko-w-dzbanku" srcset="
+          ./images/768/slider-pic5-124x126-768.png 124w,
+          ./images/1200/slider-pic5-188x191-1200.png 188w,
+          ./images/retina/slider-pic5-248x252-768-2x.png 248w,
+          ./images/retina/slider-pic5-376x382-1200-2x.png 376w
+          " sizes="
+          ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 248px,
+          ((min-width: 768px) and (max-width:1199px)) 124px,
+          (max-width: 767px) 124px,
+          (min-width: 1200px) 188px,
+          ((min-width: 768px) and (max-width:1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 248px,
+          ((min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 376px, 
+          100vw">
         <p class="milk-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
         </p>
         <button type="button" class="milk-info__button">
-            <svg width="12px" height="12px" class="milk-info__icon">
-                <use href="images/icons.svg#icon-circle-arrow-right"></use>
-            </svg>
+            <img class="milk-info__icon" src="images/global/arrow-right-40x40.png" alt="strzalka-w-prawo-kolko" />
         </button>
     </div>
     <!-- THIS IS OPEN MOBILE MENU brak zapytań o media dla tabletu-->
@@ -77,7 +88,10 @@
                 <use href="images/icons.svg#icon-close-cross"></use>
             </svg>
         </button>
-        <button type="button" class="buy-button buy-button--mobile">Buy now</button>
+        <button type="button" class="buy-button buy-button--mobile">Buy now <svg width="4px" height="8px"
+                class="buy-button__icon-send">
+                <use href="images/icons.svg#icon-button-arrow"></use>
+            </svg></button>
         <nav class="menu-mobile__navigation">
             <a class="menu-mobile__link menu-mobile__link--present" href="index.html">Home</a>
             <a class="menu-mobile__link" href="#about-us">About us</a>
@@ -87,22 +101,20 @@
         </nav>
     </div>
     <!-- THIS IS DESKTOP MENU -->
-    <!-- <div class="menu container">
-        <a class="logo logo--color" href="index.html">WebStudio</a>
-        <nav class="nav-submenu">
-            <a class="nav-submenu__link nav-submenu__link--present" href="index.html#Agencja">Agencja</a>
-            
-            <a class="nav-submenu__link" href="#Kontakt">Kontakt</a>
+    <div class="menu-desktop"> <!--container container--header-desktop-->
+        <a class="logo" href="index.html"><img src="images/global/logo-1-199x50.png" alt="Logo-i-ikona-png" srcset="./images/retina/logo-1-398x100-2x.png 2x
+                    "></a>
+        <nav class="menu-desktop__navigation">
+            <a class="menu-desktop__link menu-desktop__link--present" href="index.html">Home</a>
+            <a class="menu-desktop__link" href="#about-us">About us</a>
+            <a class="menu-desktop__link" href="#how-its-made">How it's made?</a>
+            <a class="menu-desktop__link" href="#products">Our products</a>
+            <a class="menu-desktop__link" href="#contact">Contact</a>
         </nav>
-        <div class="menu-right">
-            <a class="menu-right__link" href="mailto:info@devstudio.com"><svg width="16px" height="16px"
-                    class="menu-right__icon menu-right__icon--mail">
-                    <use href="images/icons.svg#icon-envelope"></use>
-                </svg>info@devstudio.com</a>
-            <a class="menu-right__link" href="tel:+48111111111"><svg width="16px" height="16px"
-                    class="menu-right__icon menu-right__icon--phone">
-                    <use href="images/icons.svg#icon-phone"></use>
-                </svg>+48 111 111 111</a>
-        </div>
-    </div> -->
+        <button type="button" class="buy-button">Buy
+            now <svg width="4px" height="8px" class="buy-button__icon-send">
+                <use href="images/icons.svg#icon-button-arrow"></use>
+            </svg>
+        </button>
+    </div>
 </header>

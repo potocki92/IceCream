@@ -43,12 +43,18 @@ body {
 /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
 .container {
-  max-width: 1280px; // nie powinna być maksymalna szerokość jak w desktopie? - Mateusz Ch.
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 20px;
 }
 
 /* GENERAL ITEM CLASS TO ALL LI
 ============================================= */
 .item {
   list-style: none;
+}
+
+/* SECTION (TOP AND BOTTOM PADDING)
+============================================= */
+.section {
+  padding: 60px 15px;  // padding ustawiamy indywidualnie pod sekcje 
 }

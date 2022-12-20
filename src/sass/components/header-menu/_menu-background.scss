@@ -4,9 +4,14 @@
   width: 100vw;
   background-color: getColor(pinky);
   overflow: hidden;
+  transition: height $transition-time-timing;
 
   @include tablet {
     height: 400px;
+  }
+
+  @include desktop{
+    height:665px
   }
 
   &__ice-container {
@@ -19,20 +24,38 @@
       height: 368px;
       left: 40.36%;
     }
+    @include desktop {
+      height: 613px;
+      left: 37.10%;
+    }
   }
 
   &__ice {
     position: absolute;
     bottom: 0px;
-    left: 68px;
+    left: 81px;
+    @include tablet {
+      left: 68px;
+    }
+    @include desktop {
+      left: 119px;
+    }
   }
 
   &__svg {
     position: relative;
     top: 0;
+    transition: transform $transition-time-timing;
 
     @include tablet {
-      transform: scale(0.936);
+      width: 324px;
+      height: 322px;
+      // transform: scale(0.936);
+    }
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      // transform: scale(1.555);
     }
   }
 

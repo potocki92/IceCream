@@ -1,0 +1,33 @@
+.menu-desktop {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px; // przeniesione z container z _general.scss
+  margin: 0 auto; // przeniesione z container z _general.scss
+  padding: 37px 115px 0 46px; // mixin do container z _general.scss
+
+  @include menu-desk {
+    display: none;
+  }
+
+  &__navigation {
+    width: 541px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #FFF;
+
+    &--present {
+      color: getColor(dark-pink);
+    }
+  }
+}
