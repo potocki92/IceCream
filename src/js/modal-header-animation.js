@@ -1,6 +1,6 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-modal-open]'),
+    openModalBtn: document.querySelectorAll('.buy-button'),
     closeModalBtn: document.querySelector('[buy-modal-close]'),
     modal: document.querySelector('[buy-modal]'),
   };
@@ -21,11 +21,11 @@
   }
 
   function toggleModalAnimation() {
-    refs.modal.setAttribute('data-modal-close', '');
+    refs.modal.setAttribute('buy-modal-close', '');
     refs.modal.addEventListener(
       'animationend',
       () => {
-        refs.modal.removeAttribute('data-modal-close');
+        refs.modal.removeAttribute('buy-modal-close');
         refs.modal.classList.toggle('is-hidden-header');
       },
       { once: true },
