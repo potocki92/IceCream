@@ -1,7 +1,9 @@
-/*do uzupełnienia wartości ze zmiennych znajdujące sie wewnątrz główneg projektu*/
 
 .contacts {
+    background-color: getColor('coffe');
+}
 
+    /* przed zmianą
     background-image: linear-gradient(to bottom,
         rgb(255, 255, 255) 8%,
         rgba(255, 245, 246, 1) 8%,
@@ -21,6 +23,7 @@
             rgba(255, 245, 246, 1) 78%);
             }
 }
+*/
 
 .contacts__list {
     list-style: none;
@@ -29,8 +32,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    transform: translateY(-95px);
+    
     @media screen and (min-width: 481px) {
+        transform: translateY(-115px);
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -44,7 +49,7 @@
 
 .contacts__card {
     padding: 43px 20px 43px 20px;
-    background-color: white;
+    background-color: getColor('semi-white');
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     box-sizing: inherit;
@@ -58,13 +63,14 @@
     }
 
     @media screen and (min-width: 1280px) {
+
         padding: 51px 44px 62px 44px;
         width: calc((100% - 60px) / 3);
     }
 }
 
 .contacts__category {
-    background-color: rgba(240, 209, 165, 1);
+    background-color: getColor('coffe');
     width: 73px;
     height: 16px;
     border-radius: 6px;
@@ -80,15 +86,14 @@
 }
 
 .contacts__category--other {
-    background-color: rgba(194, 226, 151, 1);
+    background-color: getColor('green');
     width: 138px;
 }
 
 .contacts__category-text {
-    font-family: DM Sans, sans-serif;
     font-style: Medium;
-    color: white;
-    font-size: 12px;
+    color: getColor('semi-white');
+    font-size: getFontSize('content-size-small');
     font-weight: 500;
     line-height: 17.32px;
     letter-spacing: 0.04em;
@@ -111,8 +116,8 @@
 .contacts__box {
     margin: 0;
     padding: 32px 0 32px 0;
-    border-bottom: 1px solid rgba(225, 225, 225, 1);
-    border-top: 1px solid rgba(225, 225, 225, 1);
+    border-bottom: 1px solid getColor('grey-accent');
+    border-top: 1px solid getColor('grey-accent');
 }
 
 .contacts__box-item {
@@ -120,14 +125,14 @@
 }
 
 .contacts__box-title {
-    font-family: DM Sans, sans-serif;
+
     color: rgba(0, 0, 0, 1);
-    font-size: 12px;
+    font-size: getFontSize('content-size-small');
     font-weight: 500;
     line-height: 22.32px;
     margin: 0;
         @media screen and (min-width: 768px) {
-        font-size: 14px;
+        font-size: getFontSize('content-size');
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.04em;
@@ -142,15 +147,14 @@
 }
 
 .contacts__box-description {
-    font-family: DM Sans, sans-serif;
-    font-size: 12px;
+    font-size: getFontSize('content-size-small');
     font-weight: 500;
     line-height: 18px;
-    color: rgba(144, 126, 130, 1);
+    color: getColor('light-brown');
     margin: 0;
     padding: 10px 0 32px 0;
         @media screen and (min-width: 768px) {
-        font-size: 14px;
+        font-size: getFontSize('content-size');
         font-weight: 500;
         line-height: 23px;
         }
@@ -164,14 +168,13 @@
 }
 
 .contacts__box-time {
-    font-family: DM Sans, sans-serif;
-    font-size: 12px;
+    font-size: getFontSize('content-size-small');
     font-weight: 500;
     line-height: 22.32px;
-    color: rgba(255, 165, 186, 1);
+    color: getColor('full-pinky');
     margin: 0;
         @media screen and (min-width: 768px) {
-            font-size: 14px;
+            font-size: getFontSize('content-size');
             font-weight: 500;
             line-height: 26px;
         }
@@ -189,21 +192,19 @@
 }
 
 .contacts__adress_link {
-    font-family: DM Sans, sans-serif;
-    font-size: 12px;
+    font-size: getFontSize('content-size-small');
     font-weight: 500;
     line-height: 18px;
-    color: rgba(144, 126, 130, 1);
+    color: getColor('light-brown');
     font-style: normal;
     text-decoration: none;
     margin: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: rgba(144, 126, 130, 1);
 
     &:hover,
     &:focus {
-        color: rgba(212, 19, 66, 1);
+        color: getColor('dark-pink');
         cursor: pointer;
     }
 
@@ -225,26 +226,23 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 54px;
+    transform: translateY(-41px); /* -95 + 54 = -41px */
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: center;
-        margin-top: 81px;
-    }
+        transform: translateY(-34px); /* -115 + 81 = -41px */}
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         justify-content: center;
-        margin-top: 86px;
-    }
+        transform: translateY(-29px); /* -115 + 86 = -41px */
+                }
 }
 
-
 .contacts__button-red {
-    background-color: rgba(212, 19, 66, 1);
-    color: rgba(255, 255, 255, 1);
-    font-family: DM Sans, sans-serif;
+    background-color: getColor('dark-pink');
+    color: getColor('semi-white');
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0em;
@@ -258,7 +256,7 @@
 
     &:hover,
     &:focus {
-        color: rgba(236, 235, 235, 1);
+        color: getColor('light-grey');
         cursor: pointer;
     }
 
@@ -273,10 +271,23 @@
     }
 }
 
+.contacts__icon-send {
+    margin-left: 8px;
+    fill: transparent;
+    stroke: getColor('semi-white');
+
+    @media screen and (min-width: 768px) {
+        margin-left: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 12px;
+    }
+}
+
 .contacts__button-white {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(212, 19, 66, 1);
-    font-family: DM Sans, sans-serif;
+    background-color: getColor('semi-white');
+    color: getColor('dark-pink');
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0em;
@@ -290,7 +301,7 @@
 
     &:hover,
     &:focus {
-        background: rgba(236, 235, 235, 1);
+        background: getColor('light-grey');
         cursor: pointer;
     }
 
@@ -302,5 +313,19 @@
     @media screen and (min-width: 1280px) {
         min-height: 44px;
         min-width: 198;
+    }
+}
+
+.contacts__icon-send--pink {
+    margin-left: 16px;
+    fill: transparent;
+    stroke: getColor('dark-pink');
+
+    @media screen and (min-width: 768px) {
+        margin-left: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 12px;
     }
 }
