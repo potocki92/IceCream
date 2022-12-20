@@ -8,7 +8,7 @@
     rgb(255, 255, 255, 1) 46.5%,
     rgba(255, 255, 255, 1) 100%
   );
-  @media screen and (width-min: 1280px) {
+  @media screen and (min-width: 1280px) {
       background-image: linear-gradient(
     to bottom,
 
