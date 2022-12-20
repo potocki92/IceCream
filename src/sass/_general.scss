@@ -43,31 +43,18 @@ body {
 /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
 .container {
-  max-width: 1280px; // nie powinna być maksymalna szerokość jak w desktopie? - Mateusz Ch.
-  margin: 0 auto;
-
-  &--header-desktop {
-    padding: 37px 115px 0 46px;
-  }
-  &--about {
-      width: 100%;
-      padding: 0 15px;
-      margin: 0px auto;
-  
-      @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 480px;
-      }
-      @media screen and (min-widht: 768px) and (max-width: 1199px) {
-        width: 768px;
-      }
-      @media screen and (min-width: 1200px) {
-        width: 1200px;
-      }
-    }
+  max-width: 1280px;
+  margin: 0 20px;
 }
 
 /* GENERAL ITEM CLASS TO ALL LI
 ============================================= */
 .item {
   list-style: none;
+}
+
+/* SECTION (TOP AND BOTTOM PADDING)
+============================================= */
+.section {
+  padding: 60px 15px;  // padding ustawiamy indywidualnie pod sekcje 
 }
