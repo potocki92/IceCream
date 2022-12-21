@@ -1,26 +1,160 @@
-<section class="products" id="products">
-    <p class="products__label">100% natural</p> 
-    <h3 class="products__title">products</h3>
+<section class="products section" id="products">
+  <div class="container products__gap">
+    <div class="products__text">
+      <p class="products__label">100% natural</p>
+      <h3 class="products__title">products</h3>
+    </div>
     <div class="products__container">
-        <figure class="products__container--pink">
-            <img class="products__container--picture" src="./images/mobile/home-pic1-249x252.png" width="249" height="252" alt="ice cream">
-            <figurecaption class="products__container--title">Ice cream</figurecaption><p class="products__container--text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do elusmod temper incididunt ut labore et
-            </p>
-        </figure>
-    
-        <figure class="products__container--yellow">
-            <img class="products__container--picture" src="./images/mobile/home-pic1-2-249x252.png" width="249" height="252" alt="ice cream">
-            <figurecaption class="products__container--title">Ice coffee</figurecaption><p class="products__container--text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do elusmod temper incididunt ut labore et
-            </p>
-        </figure>
-   
-        <figure class="products__container--green">
-            <img class="products__container--picture" src="./images/mobile/home-pic1-3-249x252.png" width="249" height="252" alt="ice cream">
-            <figurecaption class="products__container--title">Milkshakes</figurecaption><p class="products__container--text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do elusmod temper incididunt ut labore et
-            </p>
-        </figure>
-     </div>
+      <figure class="products__container__color products__container__color--pink">
+        <div class="products__container--move">
+          <picture class="products__container--picture">
+            <!-- 1200px -->
+            <source
+              srcset="
+                ./images/1200/home-pic1-335x335-1200.png      1x,
+                ./images/retina/home-pic1-670x670-1200-2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              width="335px"
+              height="335px"
+            />
+            <!-- 768px -->
+            <source
+              srcset="
+                ./images/768/home-pic1-220x226-768.png       1x,
+                ./images/retina/home-pic1-440x452-768-2x.png 2x
+              "
+              media="(min-width: 768px)"
+              width="220px"
+              height="226px"
+            />
+            <!-- 320px -->
+            <img
+              srcset="
+                ./images/mobile/home-pic1-249x252.png    1x,
+                ./images/retina/home-pic1-484x504-2x.png 2x
+              "
+              alt="cow and milk"
+              width="100%"
+            />
+          </picture>
+          <div class="prodcuts__container--box">
+            <div class="products__container--capture">
+              <figurecaption class="products__container--title">Ice cream</figurecaption>
+              <div class="products__container--dots">
+                <div class="products__container--dots--dot"></div>
+              </div>
+              <div class="products__containe__text">
+                <p class="products__container--text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et. dolore magna aliqua facilisis.
+                </p>
+              </div>
+            </div>
+            <img class="prodcuts__container--arrow" src="/images/global/arrow-right-40x40.png" />
+          </div>
+        </div>
+      </figure>
+
+      <figure class="products__container__color products__container__color--yellow">
+        <div class="products__container--move">
+          <picture class="products__container--picture" <!-- 1200px -->
+            <source
+              srcset="
+                ./images/1200/home-pic1-2-335x335-1200.png      1x,
+                ./images/retina/home-pic1-2-670x670-1200-2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              width="335px"
+              height="335px"
+            />
+            <!-- 768px -->
+            <source
+              srcset="
+                ./images/768/home-pic1-2-220x226-768.png       1x,
+                ./images/retina/home-pic1-2-440x452-768-2x.png 2x
+              "
+              media="(min-width: 768px)"
+              width="220px"
+              height="226px"
+            />
+            <!-- 320px -->
+            <img
+              srcset="
+                ./images/mobile/home-pic1-2-249x252.png    1x,
+                ./images/retina/home-pic1-2-484x504-2x.png 2x
+              "
+              alt="cow and milk"
+              width="100%"
+            />
+          </picture>
+          <div class="prodcuts__container--box">
+            <div class="products__container--capture">
+              <figurecaption class="products__container--title">Ice coffee</figurecaption>
+              <div class="products__container--dots">
+                <div class="products__container--dots--dot"></div>
+              </div>
+              <div class="products__containe__text">
+                <p class="products__container--text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et. dolore magna aliqua facilisis.
+                </p>
+              </div>
+            </div>
+            <img class="prodcuts__container--arrow" src="/images/global/arrow-right-40x40.png" />
+          </div>
+        </div>
+      </figure>
+
+      <figure class="products__container__color products__container__color--green">
+        <div class="products__container--move">
+          <picture class="products__container--picture" <!-- 1200px -->
+            <source
+              srcset="
+                ./images/1200/home-pic1-3-335x335-1200.png      1x,
+                ./images/retina/home-pic1-3-670x670-1200-2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              width="335px"
+              height="335px"
+            />
+            <!-- 768px -->
+            <source
+              srcset="
+                ./images/768/home-pic1-3-220x226-768.png       1x,
+                ./images/retina/home-pic1-3-440x452-768-2x.png 2x
+              "
+              media="(min-width: 768px)"
+              width="220px"
+              height="226px"
+            />
+            <!-- 320px -->
+            <img
+              srcset="
+                ./images/mobile/home-pic1-3-249x252.png    1x,
+                ./images/retina/home-pic1-3-484x504-2x.png 2x
+              "
+              alt="cow and milk"
+              width="100%"
+            />
+          </picture>
+          <div class="prodcuts__container--box">
+            <div class="products__container--capture">
+              <figurecaption class="products__container--title">Milkshakes</figurecaption>
+              <div class="products__container--dots">
+                <div class="products__container--dots--dot"></div>
+              </div>
+              <div class="products__containe__text">
+                <p class="products__container--text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et. dolore magna aliqua facilisis.
+                </p>
+              </div>
+            </div>
+            <img class="prodcuts__container--arrow" src="/images/global/arrow-right-40x40.png" />
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
 </section>
