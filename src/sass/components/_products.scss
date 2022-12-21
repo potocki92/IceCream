@@ -1,6 +1,11 @@
 .products.section {
   padding: 121px 0 98px 0;
 }
+.products__gap {
+  display: flex;
+  flex-direction: column;
+  gap: 144px;
+}
 .products__label {
   color: #ffa5ba;
   font-family: 'Titan One';
@@ -19,8 +24,6 @@
   text-align: center;
   line-height: 39px;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 150px;
 }
 
 .products__container {
@@ -120,6 +123,10 @@
   .products.section {
     padding: 122px 0 112px 0;
   }
+
+  .products__gap {
+    gap: 150px;
+  }
   .products__container {
     flex-direction: row;
     justify-content: center;
@@ -144,10 +151,13 @@
   .products.section {
     padding: 127px 0 119px 0;
   }
-
+  .products__gap {
+    gap: 259px;
+  }
   .products__container {
     &--move {
       gap: 38px;
+      margin-top: -200px;
     }
   }
   .products__container {
