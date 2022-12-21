@@ -1,6 +1,13 @@
 
 .contacts {
     background-color: getColor('light-pink');
+    padding-top: 0.1px;
+
+    @media screen and (min-width: 1280px) {
+    background-image: url(../images/1200/sectionbg2-1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    }
 }
 
     /* przed zmianą
@@ -30,15 +37,21 @@
     padding: 0;
     gap: 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    transform: translateY(-95px);
+    margin-top: -96px;
     
     @media screen and (min-width: 481px) {
-        transform: translateY(-115px);
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin-top: -117px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -226,17 +239,18 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    transform: translateY(-41px); /* -95 + 54 = -41px */
+    margin-top: 54px;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: center;
-        transform: translateY(-34px); /* -115 + 81 = -41px */}
+        margin-top: 81px;
+    }
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         justify-content: center;
-        transform: translateY(-29px); /* -115 + 86 = -41px */
+        margin-top: 86px;
                 }
 }
 
