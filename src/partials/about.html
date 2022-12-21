@@ -1,10 +1,41 @@
-<section class="about section" id="#how-its-made">
-  <div class="container container--about">
+
+<section class="about section">
+  <div class="container">
     <h3 class="about__title--smaller">tradition and love</h3>
     <h2 class="about__title">how it's made?</h2>
     <div class="about__slider">
-      <img src="images\mobile\home-pic4-280x279.png" />
-      <ul class="about__content">
+      <picture class="about__image">
+        <!-- 1200px -->
+        <source
+          srcset="
+            ./images/1200/home-pic4-516x516-1200.png        1x,
+            ./images/retina/home-pic4-1032x1032-1200-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          width="516px"
+          height="516px"
+        />
+        <!-- 768px -->
+        <source
+          srcset="
+            ./images/768/home-pic4-340x339-768.png       1x,
+            ./images/retina/home-pic4-680x678-768-2x.png 2x
+          "
+          media="(min-width: 768px)"
+          width="340px"
+          height="339px"
+        />
+        <!-- 320px -->
+        <img
+          srcset="
+            ./images/mobile/home-pic4-280x279.png    1x,
+            ./images/retina/home-pic4-560x558-2x.png 2x
+          "
+          alt="cow and milk"
+          width="100%"
+        />
+      </picture>
+      <ul>
         <li class="about__text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
