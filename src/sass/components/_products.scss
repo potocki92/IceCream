@@ -76,12 +76,31 @@
 .products__container--dots {
   display: flex;
   justify-content: center;
-
+  position: relative;
   &--dot {
     width: 6px;
     height: 6px;
     background-color: white;
     border-radius: 50%;
+    
+  }
+  &--dot::after {
+    content: '';
+    left: 10px;
+    background: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &--dot::before {
+    content: '';
+    right: 10px;
+    background: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
   }
 }
 .products__container--title {
