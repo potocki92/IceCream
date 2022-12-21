@@ -2,6 +2,12 @@
   padding: 113px 0px;
   padding-bottom: 25px;
   background-color: getColor('light-pink');
+  @media screen and (min-width: 768px) {
+  padding-top: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+  padding-top: 165px;
+  }
 }
 
 .footer {
