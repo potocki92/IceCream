@@ -6,7 +6,7 @@
     @media screen and (min-width: 1280px) {
     background-image: url(../images/1200/sectionbg2-1.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center center;
     }
 }
 
@@ -47,15 +47,18 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        
     }
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         margin-top: -117px;
+        padding: 0 16px;
     }
 
     @media screen and (min-width: 1280px) {
         gap: 30px;
+        padding: 0 80px;
     }
 
 }
