@@ -1,5 +1,4 @@
-// * {box-sizing: border-box}
-// body {font-family: Verdana, sans-serif; margin:0}
+
 .customers-section {
   padding-left: 0;
   padding-right: 0;
@@ -9,15 +8,17 @@
   gap: 30px;
   align-items: center;
   // padding: 113px 20px;
-  padding-bottom: 87px;
+  padding-bottom: 183px;
   padding-top: 0;
   background-color: rgba(255, 255, 255, 1);
   @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
+    // pading normalny 119px + 117px od sekcji contacts (margin - 117)
+    padding-bottom: 236px;
     
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 132px;
+    // pading normalny 132px + 117px od sekcji contacts (margin - 117)
+    padding-bottom: 249px;
     
   }
 
