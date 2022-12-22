@@ -23,7 +23,7 @@
   background-image: url(../images/1200/sectionbg1-1280x534-1200.png);
   background-repeat: no-repeat;
   // background-size: 1400px;
-  background-size: center;
+  background-size: contain;
   background-position: 50% 125%;
 
   font-family: 'Titan One';
@@ -41,30 +41,13 @@
   }
 
   &__title {
-    font-size: 58px;
-    line-height: 66px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: getColor('dark-pink');
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
-      font-size: 34px;
-      line-height: 39px;
-      text-align: center;
-      letter-spacing: 0.04em;
     }
 
     &--smaller {
-      font-size: 30px;
-      line-height: 34px;
-      text-align: center;
-      text-transform: uppercase;
-      color: getColor('full-pinky');
 
       @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: 18px;
-        line-height: 21px;
       }
     }
   }
