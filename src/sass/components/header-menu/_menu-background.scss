@@ -1,7 +1,6 @@
 .menu-background {
   // position: relative;
   height: 502px;
-  width: 100vw;
   background-color: getColor(pinky);
   overflow: hidden;
   transition: height $transition-time-timing;
@@ -10,8 +9,8 @@
     height: 400px;
   }
 
-  @include desktop{
-    height:665px
+  @include desktop {
+    height: 665px
   }
 
   &__ice-container {
@@ -24,6 +23,7 @@
       height: 368px;
       left: 40.36%;
     }
+
     @include desktop {
       height: 613px;
       left: 37.10%;
@@ -34,9 +34,11 @@
     position: absolute;
     bottom: 0px;
     left: 81px;
+
     @include tablet {
       left: 68px;
     }
+
     @include desktop {
       left: 119px;
     }
@@ -52,6 +54,7 @@
       height: 322px;
       // transform: scale(0.936);
     }
+
     @include desktop {
       width: 538px;
       height: 538px;
@@ -67,4 +70,6 @@
 .container--menu-background {
   position: relative;
   height: inherit;
+  padding: 0;
+  margin: 0 auto;
 }
