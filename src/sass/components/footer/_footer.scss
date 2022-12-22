@@ -1,6 +1,6 @@
 .footer-section {
   padding: 113px 0px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   background-color: getColor('light-pink');
   @media screen and (min-width: 768px) {
     padding-top: 158px;
@@ -130,8 +130,8 @@
   
   @media screen and (min-width: 768px) {
        line-height: 1.86;
-    padding-top: 29px;
-    padding-bottom: 18px;
+    padding-top: 28px;
+    padding-bottom: 19px;
   }
   @media screen and (min-width: 1280px) {
     line-height: 1.86;
