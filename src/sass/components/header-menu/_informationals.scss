@@ -1,92 +1,93 @@
 .informationals {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: fit-content;
-    height: 305px;
-    top: 95px;
-    right: 34px;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity $transition-time-timing;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  height: 305px;
+  top: 95px;
+  right: 34px;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity $transition-time-timing;
+  gap: 13px;
 
-    @include phone {
-        opacity: 0;
-        pointer-events: none;
-    }
+  @include phone {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @include desktop {
+    height: 505px;
+    top: 160px;
+    right: 109px;
+    gap: 15px;
+  }
+  &__photo {
+    position: absolute;
+    bottom: 0;
+    display: block;
 
     @include desktop {
-        height: 505px;
-        top: 160px;
-        right: 109px;
+      right: 12px;
+    }
+  }
+
+  &__sites {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #ffffff;
+    width: 52px;
+    position: relative;
+    padding-right: 8px;
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.29;
+      width: 82px;
+      padding-right: 6px;
     }
 
-    &__photo {
-        position: absolute;
-        bottom: 0;
-        display: block;
+    &::first-line {
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: getColor(dark-pink);
+      margin-bottom: 13px;
 
-        @include desktop {
-            right: 12px;
-        }
+      @include desktop {
+        font-size: 46px;
+        line-height: 1.15;
+      }
     }
 
-    &__sites {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 1.25;
-        text-align: right;
-        color: #FFFFFF;
-        width: 52px;
-        position: relative;
-        padding-right: 8px;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: #ffffff;
+      border-radius: 50%;
+      z-index: -1;
 
-        @include desktop {
-            font-size: 14px;
-            line-height: 1.29;
-            width: 82px;
-            padding-right: 6px;
-        }
-
-        &::first-line {
-            font-family: 'Titan One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 1.14;
-            text-align: right;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: getColor(dark-pink);
-            margin-bottom: 13px;
-
-            @include desktop {
-                font-size: 46px;
-                line-height: 1.15;
-            }
-        }
-
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            background: #FFFFFF;
-            border-radius: 50%;
-            z-index: -1;
-
-            @include desktop {
-                width: 30px;
-                height: 30px;
-                right: -12px;
-                top: -4px;
-            }
-        }
+      @include desktop {
+        width: 30px;
+        height: 30px;
+        right: -12px;
+        top: -4px;
+      }
     }
+  }
 }
