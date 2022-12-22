@@ -23,9 +23,8 @@
   background-image: url(../images/1200/sectionbg1-1280x534-1200.png);
   background-repeat: no-repeat;
   // background-size: 1400px;
-   background-size: center;
+  background-size: center;
   background-position: 50% 125%;
-  
 
   font-family: 'Titan One';
   font-style: normal;
@@ -38,7 +37,7 @@
     background-position: 50% 80%;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-background-image: none;
+    background-image: none;
   }
 
   &__title {
@@ -94,24 +93,18 @@ background-image: none;
     }
   }
 
-
-&__content {
-  padding-left: 50px;
-  padding-right: 50px;
-  @media screen and (min-width: 768px)  {
-    padding-left: 17px;
-    padding-right: 0px;
-    
+  &__content {
+    padding-left: 50px;
+    padding-right: 50px;
+    @media screen and (min-width: 768px) {
+      padding-left: 17px;
+      padding-right: 0px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 74px;
+      padding-right: 0px;
+    }
   }
-  @media screen and (min-width: 768px)  {
-    padding-left: 74px;
-    padding-right: 0px;
-    
-  }
-
-
-}
-
 
   &__text {
     font-family: 'DM Sans';
@@ -157,6 +150,7 @@ background-image: none;
     border: none;
     width: 174px;
     height: 44px;
+    cursor: pointer;
 
     &:hover {
       background-color: #ecebeb;
