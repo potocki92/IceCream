@@ -1,48 +1,38 @@
-# parcel-project-template
+# Ice Cream
 
-## Zalezności
+This is a group project for an online ice cream store. The website was developed using the BEM (Block-Element-Modifier) methodology and the following technologies: SCSS, HTML, CSS, JavaScript, Parcel.
 
-Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
+## Description
 
-## Przed rozpoczęciem pracy
+The Ice Cream website is a fully responsive project that follows the mobile-first design strategy. The website provides an enjoyable and user-friendly experience across various devices.
 
-Jeden raz na projekt zainstalować wszystkie zalezności.
+## Technologies
 
-```shell
-npm ci
-```
+- SCSS: Used for styling the website with the power of variables, nesting, and other advanced CSS features.
+- HTML: The standard markup language for structuring the website's content.
+- CSS: Used for additional styling and customization.
+- JavaScript: Added interactivity and dynamic functionalities to enhance the user experience.
+- Parcel: The bundler used for building and packaging the project, making it easier to manage dependencies and assets.
+- BEM: The methodology used for organizing and naming CSS classes, ensuring a modular and maintainable codebase.
 
-### Praca
+## Contributors
 
-Włączyć tryp pracy.
+- **potocki92** - Team leader
+- **MateuszKar2** - Scrum master, Products section, SCSS
+- **mikus151** - Footer, Icon, Bug fixing, SCSS, Customer reviews
+- **MateuszCharysz** - Header, Modal, Bug fixing, SCSS
+- **CragHerk** - Advantages section, SCSS
+- **MichalJurek** - Contact section, SCSS
+- **MonikaC1984** - Gallery section, SCSS, Customer reviews
+- **MichalBryla3** - About section, SCSS
 
-```shell
-npm run dev
-```
+Each contributor played a crucial role in their assigned sections, working on the design, development, and bug fixing using SCSS.
 
-W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
+## Installation and Usage
 
-### Deploy
+To run the Ice Cream website locally, follow these steps:
 
-Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
-na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
-`build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
-
-```json
-"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
-},
-```
-
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
-jest wpisany w poprawione właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-## Pliki i folderzy
-
-- Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
-  `src/sass/main.scss`
-- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie. Program po prostu 
-  kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych komputerach 
-  to moze zająć duzo czasu.
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running `npm install` or `yarn install`.
+3. Start the development server by running `npm start` or `yarn start`.
+4. Open the website in your web browser and explore the different sections.
