@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/1200/sectionbg1-1280x534-1200.png":[["sectionbg1-1280x534-1200.b9942a93.png","H8Dd"],"H8Dd"],"./../images/mobile/gallery-mobile@1x.png":[["gallery-mobile@1x.2a853976.png","FbyD"],"FbyD"],"./../images/mobile/gallery-mobile@2x.png":[["gallery-mobile@2x.a9b49bdf.png","QAKT"],"QAKT"],"./../images/768/gallery-tablet@1x.png":[["gallery-tablet@1x.4a39a826.png","XLWS"],"XLWS"],"./../images/768/gallery-tablet@2x.png":[["gallery-tablet@2x.9f8ab5d8.png","fd5S"],"fd5S"],"./../images/1200/gallery-desktop@1x.png":[["gallery-desktop@1x.bf99ff84.png","qVx0"],"qVx0"],"./../images/1200/gallery-desktop@2x.png":[["gallery-desktop@2x.2df6652d.png","h9PA"],"h9PA"],"./../images/home-slider.png":[["home-slider.88315175.png","rj7r"],"rj7r"],"./../images/1200/sectionbg2-1.png":[["sectionbg2-1.5f6552eb.png","dmk6"],"dmk6"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-team-project/src.0e75eed5.js.map
+//# sourceMappingURL=/IceCream/src.9888ed24.js.map
